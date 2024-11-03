@@ -89,7 +89,7 @@ For Hardware:
 ## Team Contributions
 - [KRISHNAPRIYA RAJEEV]]: [idea pitching]
 - [ELDHO G BLAYIL]: [designing ]
-- [DEVAPRIYA KS]: [documentation]
+- [DEVAPRIYA KS]: [documentation ]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
