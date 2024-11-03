@@ -46,13 +46,13 @@ For Software:vscode
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![https://github.com/krishnapriyaaahh/useless_project_temp/blob/1b32328d7f78530b3f861635cec6fbb93125a461/sc_1.png](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![https://github.com/krishnapriyaaahh/useless_project_temp/blob/1b32328d7f78530b3f861635cec6fbb93125a461/sc_2.png](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![https://github.com/krishnapriyaaahh/useless_project_temp/blob/1b32328d7f78530b3f861635cec6fbb93125a461/sc_3.png](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
 # Diagrams
@@ -80,7 +80,7 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+[https://github.com/krishnapriyaaahh/useless_project_temp/blob/1b32328d7f78530b3f861635cec6fbb93125a461/filmfry_video_snip.mp4]
 *Explain what the video demonstrates*
 
 # Additional Demos
