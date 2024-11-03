@@ -1,33 +1,33 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# [FILM FRY] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [CODESTELLARS]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [KRISHNAPRIYA RAJEEV] - [TOC H INSTITUTE OF SCIENCE AND TECHNOLOGY]
+- Member 2: [ELDHO G BLAYIL] - [TOC H INSTITUTE OF SCIENCE AND TECHNOLOGY]
+- Member 3: [DEVAPRIYA KS] - [TOC H INSTITUTE OF SCIENCE AND TECHNOLOGY]
 
 ### Project Description
-[2-3 lines about what your project does]
+[CHAT BOT FOR ALL YOUR MOVIE NEEDS, FROM SUGGESTING FILMS TO ROASTING YOUR FILMS TASTE]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[THINKING HIGHLY OF YOUR FILM TASTE]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[BY GIVING LIGHT HEARTED BUT EFFECTIVE ROASTS TO TEST OUR LIMITS!]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [Python,HTML,Java script,CSS]
+- [flask]
+- [flask]
+- [vscode,together ai]
 
 For Hardware:
 - [List main components]
@@ -35,7 +35,7 @@ For Hardware:
 - [List tools required]
 
 ### Implementation
-For Software:
+For Software:vscode
 # Installation
 [commands]
 
@@ -87,9 +87,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [KRISHNAPRIYA RAJEEV]]: [idea pitching]
+- [ELDHO G BLAYIL]: [designing ]
+- [DEVAPRIYA KS]: [coding]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
