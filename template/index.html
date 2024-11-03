@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Fry</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #ecca07;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .chat-container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 10px;
+            border: 5px solid #030d5a;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        #chat-box {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            margin: 10px 0;
+            padding: 8px 10px;
+            border-radius: 5px;
+        }
+
+        .user {
+            text-align: right;
+            background: #0c0403;
+            color: white;
+            align-self: flex-end;
+        }
+
+        .bot {
+            text-align: left;
+            background: #000000;
+            color: rgb(255, 255, 255);
+                        align-self: flex-start;
+        }
+
+        .chat-container h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #130201;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 110px);
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1f0401;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0e0807;
+        }
+
+        @media (max-width: 600px) {
+            input[type="text"] {
+                width: calc(100% - 90px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Film Fry</h1>
+        <div id="chat-box"></div>
+        <div style="display: flex; justify-content: space-between;">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('send-button').onclick = function() {
+            const userInput = document.getElementById('user-input').value;
+            if (!userInput) return;
+
+            // Display user message
+            displayMessage(userInput, 'user');
+            document.getElementById('user-input').value = '';
+
+            // Send request to the Flask server
+            fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display bot response
+                displayMessage(data.response, 'bot');
+            });
+        };
+
+        function displayMessage(message, sender) {
+            const chatBox = document.getElementById('chat-box');
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender);
+            messageElement.textContent = message;
+            chatBox.appendChild(messageElement);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to bottom
+        }
+    </script>
+</body>
+</html>
